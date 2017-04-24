@@ -1,0 +1,27 @@
+Para subir el codigo que hemos modificado a GIT
+
+
+Abrir consola gti Bash
+$ cd djangogirls/
+$ git init
+$ git status #Nos mostrará los archivos que han tenido cambios (en rojo)
+$ git add --all . #prepara todos los archivos nuevos y modificados para enviarse
+$ git add -A #reconoce incluso archivos eliminados
+$ git status #nos muestra los archivos que están listos (en verde)
+$ git commit -m "Aquí el comentario de los cambios hechos" #Envía los archivos, hace un comentario sobre ellos, genera un punto en nuestra línea de tiempo
+$ git push #prepara los cambios para que sean "jalados" por el código a pythonanywhere
+
+
+Abre una consola en Pythonanywhere
+
+$ cd ~/my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+
+Finalmente, dirígete a la pestaña Web y selecciona Reload en tu aplicación web.
+
+*-*ciertamente esta página no muestra todos los formularios que he creado con el administrador de django D:
+
